@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/boy" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="스크롤로 숫자 고르기" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="44sp"
+            android:layout_height="44sp"
+            android:text="0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/ic_baseline_circle_blue"
+            android:id="@+id/myBall1"/>
+
+        <TextView
+            android:layout_width="44sp"
+            android:layout_height="44sp"
+            android:text="0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/ic_baseline_circle_green"
+            android:id="@+id/myBall2"/>
+
+        <TextView
+            android:layout_width="44sp"
+            android:layout_height="44sp"
+            android:text="0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/ic_baseline_circle_purple"
+            android:id="@+id/myBall3"/>
+
+        <TextView
+            android:layout_width="44sp"
+            android:layout_height="44sp"
+            android:text="0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/ic_baseline_circle_red"
+            android:id="@+id/myBall4"/>
+
+        <TextView
+            android:layout_width="44sp"
+            android:layout_height="44sp"
+            android:text="0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/ic_baseline_circle_yellow"
+            android:id="@+id/myBall5"/>
+
+        <TextView
+            android:layout_width="44sp"
+            android:layout_height="44sp"
+            android:text="0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/ic_baseline_circle_gray"
+            android:id="@+id/myBall6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center">
+
+        <NumberPicker
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:id="@+id/numberPicker"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@android:drawable/ic_input_add"
+            android:id="@+id/btn_add"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_delete"
+            android:id="@+id/btn_clear"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="6개의 숫자를 선택하세요"
+        android:id="@+id/txt_message"
+        android:textSize="32sp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        app:srcCompat="@drawable/robot" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="44sp"
+            android:layout_height="44sp"
+            android:text="0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/ic_baseline_circle_blue"
+            android:id="@+id/randomBall1"/>
+
+        <TextView
+            android:layout_width="44sp"
+            android:layout_height="44sp"
+            android:text="0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/ic_baseline_circle_green"
+            android:id="@+id/randomBall2"/>
+
+        <TextView
+            android:layout_width="44sp"
+            android:layout_height="44sp"
+            android:text="0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/ic_baseline_circle_purple"
+            android:id="@+id/randomBall3"/>
+
+        <TextView
+            android:layout_width="44sp"
+            android:layout_height="44sp"
+            android:text="0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/ic_baseline_circle_red"
+            android:id="@+id/randomBall4"/>
+
+        <TextView
+            android:layout_width="44sp"
+            android:layout_height="44sp"
+            android:text="0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/ic_baseline_circle_yellow"
+            android:id="@+id/randomBall5"/>
+
+        <TextView
+            android:layout_width="44sp"
+            android:layout_height="44sp"
+            android:text="0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/ic_baseline_circle_gray"
+            android:id="@+id/randomBall6"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/robot"
+        android:id="@+id/btnPlay"/>
+
+</LinearLayout>
